@@ -1,0 +1,101 @@
+:root{
+    --columns-row: 16;
+    background-color: #bd443f;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.header{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size:1.3em;
+    color: rgba(255, 217, 0, 0.623);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width:20em;
+    justify-content: center;
+    align-items: center;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(var(--columns-row), 1fr);
+    grid-template-rows: repeat(var(--columns-row), 1fr);
+    width: 500px;
+    height: 500px;
+    border: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(218, 210, 210);
+
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#slidersize {
+    font-size: 1.8em;
+    color: rgba(255, 217, 0, 0.623);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fa-github {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    color: black;
+}
+
+.fa-linkedin {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    color: #2867B2;
+}

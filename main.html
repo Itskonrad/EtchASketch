@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Etch-A-Sketch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cbb1d434cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Etch-A-Sketch</h1>
+        </div>
+        <div class="container">
+            <div class="grid" id="grid"></div>
+            <div class="menu">
+                <div id="slidersize">16 x 16</div>
+                <div class="sliderContainer"><input type="range" min="10" max="75" value="16" class="slider"
+                        id="slider"></div>
+                <input type="color" id="colorpicker" value="#000000">
+                <div><button type="button" id="clearbtn">Clear Grid</button></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>
+            Konrad Lach
+        </p>
+        <a href="https://github.com/itskonrad" target="_blank">
+            <i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/konrad-lach-338571169/" target="_blank">
+            <i class="fab fa-linkedin"></i></a>
+    </footer>
+</body>
+
+<script src='main.js' defer></script>
+
+</html>
